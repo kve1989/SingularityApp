@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=SingularityApp
+Exec=singularityapp %U
+Terminal=false
+Type=Application
+Icon=com.singularityapp.SingularityApp
+StartupWMClass=SingularityApp
+MimeType=x-scheme-handler/singularityapp;x-scheme-handler/com.singularityapp;
+Comment=Most powerful chaos management planner
+Categories=Office;

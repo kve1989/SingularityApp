@@ -1,0 +1,67 @@
+app-id: com.singularityapp.SingularityApp
+base: org.electronjs.Electron2.BaseApp
+base-version: '23.08'
+runtime: org.freedesktop.Platform
+runtime-version: '23.08'
+sdk: org.freedesktop.Sdk
+command: singularityapp
+tags:
+  - proprietary
+finish-args:
+  - --socket=x11
+  - --device=dri
+  - --share=ipc
+  - --socket=pulseaudio
+  - --share=network
+  - --talk-name=org.freedesktop.secrets
+  - --talk-name=org.freedesktop.Notifications
+  - --talk-name=org.kde.StatusNotifierWatcher
+modules:
+  - name: squashfs-tools
+    buildsystem: simple
+    build-commands:
+      - XZ_SUPPORT=1 make -C squashfs-tools -j ${FLATPAK_BUILDER_N_JOBS} install INSTALL_DIR=${FLATPAK_DEST}/bin
+    sources:
+      - type: archive
+        url: https://github.com/plougher/squashfs-tools/archive/4.4-git.1.tar.gz
+        sha256: 9b89c3d2f0d0456e99fa3dd4429d45044044f0115acb0f15c441a4b9496d25a7
+
+  - shared-modules/libsecret/libsecret.json
+
+  - name: todoist
+    buildsystem: simple
+    build-commands:
+      - install -D apply_extra "${FLATPAK_DEST}/bin/apply_extra"
+      - install singularityapp.sh "${FLATPAK_DEST}/bin/singularityapp"
+    post-install:
+      - install -p -Dm644 "icon.png" "${FLATPAK_DEST}/share/icons/hicolor/512x512/apps/${FLATPAK_ID}.png"
+      - install -Dm644 singularityapp.desktop "${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop"
+      - install -Dm644 com.singularityapp.SingularityApp.metainfo.xml "${FLATPAK_DEST}/share/metainfo/${FLATPAK_ID}.metainfo.xml"
+    sources:
+      - type: extra-data
+        filename: singularityapp.snap
+        url: https://api.snapcraft.io/api/v1/snaps/download/MGxJGb96XBV8UshTS2iqLOI4ylXW8xwY_90.snap
+        sha256: b5f876b2383a2f2dd7efe99b073db8409a78ad79a917cad86da645c8fba9dafb
+        size: 108466176
+        x-checker-data:
+          type: snapcraft
+          name: singularityapp
+          channel: stable
+      - type: script
+        dest-filename: apply_extra
+        commands:
+          # TODO: Spotify simply includes -no-progress here and does not create
+          # noise, but it does not work here
+          - unsquashfs singularityapp.snap 1>/dev/null
+          - rm singularityapp.snap
+          # TODO: This moves in a lot of junk too
+          - mv squashfs-root singularityapp
+          - touch singularityapp/chrome-sandbox && chmod +x singularityapp/chrome-sandbox
+      - type: file
+        path: singularityapp.sh
+      - type: file
+        path: com.singularityapp.SingularityApp.metainfo.xml
+      - type: file
+        path: singularityapp.desktop
+      - type: file
+        path: icon.png

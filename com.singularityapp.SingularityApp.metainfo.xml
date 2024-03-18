@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+    <id>com.singularityapp.SingularityApp</id>
+    <metadata_license>CC-BY-SA</metadata_license>
+    <project_license>LicenseRef-proprietary</project_license>
+    <name>SingularityApp</name>
+    <summary>Free your head for inspiration and fresh ideas. SingularityApp takes over your routine</summary>
+    <description>
+        <p>SingularityApp on Linux has all the same cool features of the application that thousands of users have already fallen in love with:</p>
+        <ul>
+            <li>cloud synchronization between devices.</li>
+            <li>two-way synchronization with Google Calendar.</li>
+            <li>widget for quickly adding tasks.</li>
+            <li>quick adding tasks via the Telegram bot and email.</li>
+            <li>and of course, tasks, projects, plans, checklists, priorities, and other convenient tools for your daily planning.</li>
+        </ul>
+        <p>Daily plan printing is not currently available on Linux, we are going to add this feature to the application in future updates. In the meantime, you can print the plan from the web version which is always available.</p>
+        <p>NOTE: An unofficial build for Flatpak</p>
+    </description>
+    <url type="help">https://singularity-app.com/wiki/</url>
+    <url type="homepage">https://singularity-app.com/</url>
+    <launchable type="desktop-id">com.singularityapp.SingularityApp.desktop</launchable>
+    <developer_name>kve1989</developer_name>
+    <screenshots>
+        <screenshot type="default">
+            <image type="source">https://singularity-app.com/upload/iblock/4d5/main-slider-2408-2-min.png</image>
+        </screenshot>
+        <screenshot>
+            <image type="source">https://singularity-app.com/upload/iblock/53c/main-slider-2408-min.png</image>
+        </screenshot>
+        <screenshot>
+            <image type="source">https://singularity-app.com/upload/iblock/0e9/main-slider-2408-1-min.png</image>
+        </screenshot>
+        <screenshot>
+            <image type="source">https://singularity-app.com/upload/iblock/61c/main-slider-2408-7-min.png</image>
+        </screenshot>
+        <screenshot>
+            <image type="source">https://singularity-app.com/upload/iblock/bf6/main-slider-2408-6-min.png</image>
+        </screenshot>
+        <screenshot>
+            <image type="source">https://singularity-app.com/upload/iblock/21c/main-slider-2408-min.png</image>
+        </screenshot>
+        <screenshot>
+            <image type="source">https://singularity-app.com/upload/iblock/b93/main-slider-2408-3-min.png</image>
+        </screenshot>
+        <screenshot>
+            <image type="source">https://singularity-app.com/upload/iblock/751/main-slider-2408-5-min.png</image>
+        </screenshot>
+    </screenshots>
+    <update_contact>jurf_AT_riseup.net</update_contact>
+    <content_rating type="oars-1.1"/>
+    <releases>
+        <release version="7.1.0" date="2024-02-19">
+            <description>
+                <b>Default project colors</b>
+                <p>Now when adding a project we will immediately set a color for it, so that tasks in the project will have their own color indicator. You can always edit the project and choose a different color and emoji for it:-)</p>
+                <p>P. S. Singularity is closer than you think!</p>
+            </description>
+        </release>
+        <release version="7.0.2" date="2024-01-26">
+            <description>
+                <b>Improved performance</b>
+                <p>In this release we brought the singularity a little closer ;-)</p>
+                <ul>
+                    <li>Made the application launch faster.</li>
+                    <li>Resolved a problem in the «After completion» repeat mode, which appeared in some cases.</li>
+                </ul>
+                <p>P. S. Singularity is closer than you think!</p>
+            </description>
+        </release>
+        <release version="7.0.0" date="2024-01-24">
+            <description>
+                <b>Attach files to the tasks!</b>
+                <p>In the desktop and web versions of the app we have added attaching files to tasks in the Pro-version!</p>
+                <ul>
+                    <li>Attach any files up to 5 MB: drag and drop a file inside the task with the mouse or click the paperclip icon.</li>
+                    <li>Attached image files will be displayed as covers, other files as titles.</li>
+                    <li>Tasks with files can be moved between projects and copied.</li>
+                    <li>In the settings added options for downloading and deleting files.</li>
+                    <li>Files are synchronized with the SingularityApp server. For unlimited attachments you can connect your S3 server!</li>
+                </ul>
+                <p>P. S. Singularity is closer than you think!</p>
+            </description>
+        </release>
+        <release version="6.6.3" date="2023-12-13">
+            <description>
+                <b>Improvements on task repeats in this release!</b>
+                <ul>
+                    <li>"After completion" mode in repeat settings: tasks will be created after a specified number of days from the completion date of the previous task.</li>
+                    <li>Setting "Create a new task after completion of the previous one" in other modes - will create a task on the next scheduled repeat day.</li>
+                    <li>Fixed drag-n-drop the repeat template to a tag in Favorites.</li>
+                </ul>
+                <p>P. S. Singularity is closer than you think!</p>
+            </description>
+        </release>
+        <release version="6.6.0" date="2023-10-26">
+            <description>
+                <b>Big update on repetitive tasks! Read it!</b>
+                <p>Repeating tasks for future dates are now immediately visible in Plans and Calendar, you can edit them and mark them completed.</p>
+                <ul>
+                    <li>We've kept the repetition templates working. Projects will display a template with circular arrows and the nearest task according to this template.</li>
+                    <li>You can still edit a template to apply changes to all future tasks at once.</li>
+                    <li>You can change or delete an individual instance - it won't affect other tasks or the template.</li>
+                </ul>
+                <p>The update affects all platforms. Please update your apps on all devices in use.</p>
+                <p>P. S. Singularity is closer than you think!</p>
+            </description>
+        </release>
+        <release version="6.5.3" date="2023-10-20">
+            <description>
+                <b>Calendar improvements and notification of important updates</b>
+                <p>In this release we have made some improvements to the calendar:</p>
+                <ul>
+                    <li>Added display of task completion time in the tooltip when hovering over a task.</li>
+                    <li>Changed sorting of tasks that overlap by time. Sorting takes into account start time, attachment and priority.</li>
+                    <li>We have made it possible to change the project through the context menu of the task in the calendar.</li>
+                </ul>
+                <p>In addition, we have added a notification window for important updates: it will appear if the application update is critical to continue working. And we fixed some minor bugs in the application.</p>
+                <p>P. S. Singularity is closer than you think!</p>
+            </description>
+        </release>
+        <release version="6.5.2" date="2023-08-24">
+            <description>
+                <b>Sorting by deadline and other improvements!</b>
+                <p>Here are some of them:</p>
+                <ul>
+                    <li>When the window is zoomed in, the project name in the task is now displayed in full.</li>
+                    <li>Fixed insertion of links in combination of slash and special characters.</li>
+                    <li>Fixed the issue of losing focus when adding a task and selecting a date with hotkeys.</li>
+                </ul>
+                <p>Sorting by deadline was added to all system folders and projects.</p>
+                <p>P. S. Singularity is closer than you think!</p>
+            </description>
+        </release>
+        <release version="6.5.1" date="2023-08-01">
+            <description>
+                <b>Task dates can now be selected in the past and other improvements!</b>
+                <p>In this release, we've released improvements that make planning easier and more convenient.</p>
+                <p>Here are some of them:</p>
+                <ul>
+                    <li>Task dates can now be selected in the past. Convenient if you need to update yesterday's schedule. Through the calendar you can move a task 3 weeks into the past, through the text input field you can specify a date even earlier.</li>
+                    <li>Clicking again on a date in the calendar now closes the calendar.</li>
+                    <li>In the visual notes editor, we show the editor toolbar only after the text selection is finished, so that it does not overlap the text during selection.</li>
+                    <li>Notification texts have been made more visual: changed the display of task name and execution time.</li>
+                    <li>Fixed insertion of multi-line lists so that tasks are added in the same order as list items.</li>
+                    <li>Added output of archived tasks in the project archive.</li>
+                </ul>
+                <p>P. S. Singularity is closer than you think!</p>
+            </description>
+        </release>
+        <release version="6.5.0" date="2023-07-10">
+            <description>
+                <b>Updated Calendar!</b>
+                <p>There are many improvements to the Calendar mode in this release. Here are just a few of them:</p>
+                <ul>
+                    <li>Mark tasks done and unmark tasks directly in the calendar without opening the task. Just hover over it and a checkbox appears.</li>
+                    <li>We've added high-priority and pinned indicators for tasks.</li>
+                    <li>Added multi-line names of tasks.</li>
+                    <li>Added placeholder during task drag-n-drop.</li>
+                    <li>Made drag-n-drop by time and stretching tasks smoother, with 5 minute intervals.</li>
+                    <li>Made smooth switching of dates by horizontal swipe.</li>
+                </ul>
+                <p>We also added a shortcut to the list of basic hotkeys in the application to the Help menu. Try it, it is more convenient ;-)</p>
+                <p>P. S. Singularity is closer than you think!</p>
+            </description>
+        </release>
+        <release version="6.4.0" date="2023-06-28">
+            <description>
+                <b>Task duration</b>
+                <p>We've added the ability to edit the end time for tasks:</p>
+                <ul>
+                    <li>Open the calendar to select a date and time from the task. Specify the start time. Next to that, in the box, specify the end time.</li>
+                    <li>For a recurring task template, also specify start and end times so that instances are created at these times.</li>
+                    <li>In the task lists, the start and end times of the task will be displayed next to the date</li>
+                </ul>
+                <p>Available in the Pro version on all platforms.</p>
+                <p>P. S. Singularity is closer than you think!</p>
+            </description>
+        </release>
+        <release version="6.3.0" date="2023-06-02">
+            <description>
+                <b>Share your task list with whomever you want!</b>
+                <p>We've added the ability to share a link to a project.</p>
+                <ul>
+                    <li>Go to the project and click on the "Share" icon to the right of the project name.</li>
+                    <li>At the bottom of the invite window, we've added a toggle to share the link. Turn it on if you want to share. Click on the link to copy.</li>
+                    <li>The project opened by the link will be accessible without a Singularity account. Everyone you send the link to will be able to open it in their browser and see up to 100 tasks in the project, mark completed tasks and checklists.</li>
+                    <li>You can always close access to the link with a switch in the project.</li>
+                    <li>If you turn off access and turn it on again, we'll generate a new link and you can share it.</li>
+                </ul>
+                <p>P. S. Singularity is closer than you think!</p>
+            </description>
+        </release>
+        <release version="6.2.1" date="2023-05-25">
+            <description>
+                <b>Alphabetical sorting, new date colors and backups in the web version</b>
+                <ul>
+                    <li>We've added alphabetical sorting to the task lists.</li>
+                    <li>Muted the colors of the dates in the lists to make it easier to read the names of tasks.</li>
+                    <li>Added a disk space check and a warning to avoid losing data.</li>
+                    <li>Added backups downloading from web version of the app.</li>
+                    <li>Combined project color and emoji selection in one window.</li>
+                </ul>
+                <p>Fixed bugs and made improvements to the application.</p>
+                <p>P. S. Singularity is closer than you think!</p>
+            </description>
+        </release>
+        <release version="6.2.0" date="2023-05-15">
+            <description>
+                <b>Project color and emoji</b>
+                <p>In this release, we've combined the emoji and project color selection into one screen to customize the project faster.</p>
+                <p>P. S. Singularity is closer than you think!</p>
+            </description>
+        </release>
+        <release version="6.1.0" date="2023-04-28">
+            <description>
+                <b>Drag-n-Drop to Favorites</b>
+                <p>And other nice improvements in this release ;-)</p>
+                <ul>
+                    <li>Transfer tasks from the right panel to projects, sections and tags in Favorites.</li>
+                    <li>Copy the emails of project participants with one click: hover over the email, the copy icon appears.</li>
+                    <li>Sort the task list by the tag: we added sorting to this screen.</li>
+                    <li>Interface improvements: increased the reaction area when hovering the mouse over some items.</li>
+                    <li>Fixed some bugs in layout and copying of tasks.</li>
+                </ul>
+                <p>P. S. Singularity is closer than you think!</p>
+            </description>
+        </release>
+        <release version="6.0.0" date="2023-04-13">
+            <description>
+                <b>WYSIWYG-editor for notes</b>
+                <p>We've added an editor on all platforms in the new release!</p>
+                <ul>
+                    <li>Open a task.</li>
+                    <li>In the notes field, select the text you want to format - a toolbar with control buttons will appear.</li>
+                    <li>Insert headers and links, bold and italicize, add links to the text!</li>
+                </ul>
+                <p>Update the app on all devices to keep notes in sync.</p>
+                <p>P. S. Singularity is closer than you think!</p>
+            </description>
+        </release>
+        <release version="5.15.1" date="2023-03-29">
+            <description>
+                <b>Quick change of periods Pomodoro for tasks</b>
+                <ul>
+                    <li>We've added a toggle for periods in the Pomodoro window for tasks.</li>
+                    <li>Added task name highlighting in the Pomodoro window. Clicking it will switch to the task in the project.</li>
+                    <li>Fixed problem with resetting notification when task date is changed via hotkey.</li>
+                    <li>Added animations when completing tasks for today.</li>
+                </ul>
+                <p>P. S. Singularity is closer than you think!</p>
+            </description>
+        </release>
+        <release version="5.15.0" date="2023-03-29">
+            <description>
+                <b>Animated reactions</b>
+                <p>We believe that the apps you use should bring positive emotions ;-) That's why we've added cool animated reactions when you mark tasks done!</p>
+                <ul>
+                    <li>If you're against positive emotions, go to Settings→General and turn off reactions.</li>
+                    <li>If you like spontaneity, you can switch the appearance of reactions in random mode in the Settings.</li>
+                </ul>
+                <p>P. S. Singularity is closer than you think!</p>
+            </description>
+        </release>
+        <release version="5.14.0" date="2023-03-22">
+            <description>
+                <b>Pomodoro-timer for tasks</b>
+                <p>Now in the Pro-version, you can track how many Pomodoros and how many minutes were spent on a task ;)</p>
+                <ul>
+                    <li>Open the context menu for the task or click on the icon in the editing toolbar.</li>
+                    <li>Select "Start Pomodoro" - a timer window for the task will open.</li>
+                    <li>Start the timer, the window can be minimized. The Pomodoro will continue to work and count the time.</li>
+                    <li>Click "stop" in the timer or mark the task as completed - the timer will stop and statistics will be added to the task.</li>
+                    <li>The statistics will show the number of Pomodoros and minutes spent on the task.</li>
+                    <li>Statistics are synchronized between devices.</li>
+                </ul>
+                <p>P. S. Singularity is closer than you think!</p>
+            </description>
+        </release>
+        <release version="5.13.1" date="2023-03-16">
+            <description>
+                <b>Hi there!</b>
+                <p>We have added a button for setting a notification for a task, even if no time is selected for it. We have also fixed several issues: when changing dates using hotkeys, the notification will no longer be reset, we have fixed the layout of dates in the calendar, and we have corrected the layout of the task list in the scheduler in Month mode.</p>
+                <p>P. S. Singularity is closer than you think!</p>
+            </description>
+        </release>
+        <release version="5.13.0" date="2023-03-03">
+            <description>
+                <b>Hey!</b>
+                <p>In this release:</p>
+                <ul>
+                    <li>We added an indicator for the number of habits and their completion in the left panel.</li>
+                    <li>We fixed the handling of links with multiple consecutive underscores.</li>
+                    <li>We fixed the handling of links to third-party applications that are not installed on the computer.</li>
+                    <li>We accelerated the loading of windows within the application.</li>
+                </ul>
+                <p>P. S. Singularity is closer than you think!</p>
+            </description>
+        </release>
+    </releases>
+</component>
