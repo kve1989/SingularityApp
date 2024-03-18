@@ -28,7 +28,7 @@ modules:
 
   - shared-modules/libsecret/libsecret.json
 
-  - name: todoist
+  - name: singularityapp
     buildsystem: simple
     build-commands:
       - install -D apply_extra "${FLATPAK_DEST}/bin/apply_extra"
