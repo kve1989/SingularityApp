@@ -50,6 +50,17 @@
     <update_contact>jurf_AT_riseup.net</update_contact>
     <content_rating type="oars-1.1"/>
     <releases>
+        <release version="7.1.2" date="2024-03-29">
+            <description>
+                <b>There are nice improvements and fixes!</b>
+                <p>Here are some of them:</p>
+                <ul>
+                    <li>Resolved an issue with instances of recurring tasks that appeared after deleting a template.</li>
+                    <li>When you modify files that are attached to tasks, the updated files are now sent to the server immediately.</li>
+                </ul>
+                <p>P. S. Singularity is closer than you think!</p>
+            </description>
+        </release>
         <release version="7.1.0" date="2024-02-19">
             <description>
                 <b>Default project colors</b>
