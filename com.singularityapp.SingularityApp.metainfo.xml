@@ -50,6 +50,21 @@
     <update_contact>jurf_AT_riseup.net</update_contact>
     <content_rating type="oars-1.1"/>
     <releases>
+        <release version="7.1.6" date="2024-05-23">
+            <description>
+                <p>This release fixes Pomodoro sound issues for desktop version platforms. And full-screen opening of the app in the Linux version.</p>
+                <p>P. S. Singularity is closer than you think!</p>
+            </description>
+        </release>
+        <release version="7.1.4" date="2024-05-07">
+            <description>
+                <b>Task parameters when adding by email</b>
+                <p>Added support for parameters for tasks when sending emails to the Inbox in SingularityApp.</p>
+                <p>For example, the subject line of email: «Task !day after tomorrow @work &1» will be added as a task with deadline for day after tomorrow, tag «work» and high priority.</p>
+                <p>More details in our wiki.</p>
+                <p>P. S. Singularity is closer than you think!</p>
+            </description>
+        </release>
         <release version="7.1.2" date="2024-03-29">
             <description>
                 <b>There are nice improvements and fixes!</b>

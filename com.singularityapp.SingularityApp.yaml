@@ -40,9 +40,9 @@ modules:
     sources:
       - type: extra-data
         filename: singularityapp.snap
-        url: https://api.snapcraft.io/api/v1/snaps/download/MGxJGb96XBV8UshTS2iqLOI4ylXW8xwY_92.snap
-        sha256: 9a9fef56396e1054fde4cfe0eb27240801f196ba0ca68b131d7bfe91745c7d29
-        size: 108855296
+        url: https://api.snapcraft.io/api/v1/snaps/download/MGxJGb96XBV8UshTS2iqLOI4ylXW8xwY_95.snap
+        sha256: d6f16b8056857a4a02c8ca0ce5181cc5f44bd56966fa74743d5732401af27bbe
+        size: 116338688
         x-checker-data:
           type: snapcraft
           name: singularityapp
